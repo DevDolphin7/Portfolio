@@ -1,0 +1,33 @@
+/* Proposed order for CSS lines: */
+/* display, z-index: */
+/* position:, top:, right:, bottom:, left: */
+/* width:, height: */
+/* margin:, padding: */
+/* background: */
+/* color:, font: */
+/* border:, border:radius: */
+/* animation */
+
+
+:root {
+    --nav-height: 90px;
+  
+    --light-bg: #eee;
+    --light-secondary-bg: #ddd;
+    --dark-bg: #27232c;
+    --dark-secondary-bg: #171127;
+    --nav-bg: #3b334c;
+    --nav-secondary-bg: #4c425c;
+
+    --transition-speed: 300ms;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color-scheme: light dark;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
