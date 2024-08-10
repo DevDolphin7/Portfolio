@@ -1,0 +1,22 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+.NavBar {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid;
+  border-color: #3e8299;
+  background-color: light-dark(var(--light-background), var(--dark-background));
+}
+
+.NavBar h1 {
+  margin: 5px auto 5px 5px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  font-size: 22px;
+}
