@@ -47,7 +47,7 @@ import "../../styles/Dropdown.css";
 // React Transition Group `npm install react-transition-group`
 // Material UI `npm install @mui/material @emotion/react @emotion/styled`
 
-export default function Dropdown({ menu }) {
+export default function Dropdown({ menu, theme }) {
   // Currently menu is not provided - to be updated after NC task completion
   const [open, setOpen] = useState(false);
   const [menuItems, setMenuItems] = useState([]);
@@ -125,7 +125,11 @@ export default function Dropdown({ menu }) {
                   aria-labelledby="composition-button"
                   onKeyDown={handleListKeyDown}
                 >
-                  <DropdownMenu menuItems={menuItems} setOpen={setOpen} />
+                  <DropdownMenu
+                    menuItems={menuItems}
+                    setOpen={setOpen}
+                    theme={theme}
+                  />
                 </MenuList>
               </ClickAwayListener>
             </Paper>
@@ -136,12 +140,12 @@ export default function Dropdown({ menu }) {
   );
 }
 
-export function DropdownMenu({ menuItems, setOpen, subMenus = [] }) {
+export function DropdownMenu({ menuItems, setOpen, theme, subMenus = [] }) {
   const [activeMenu, setActiveMenu] = useState("main");
   const nodeRef = useRef(null);
 
   return (
-    <div className="dropdown-menu">
+    <div className={`dropdown-menu-${theme}`}>
       <CSSTransition
         nodeRef={nodeRef}
         in={activeMenu === "main"}
@@ -161,6 +165,7 @@ export function DropdownMenu({ menuItems, setOpen, subMenus = [] }) {
                 textOnly={item.text}
                 component={item["--component--"]}
                 setOpen={setOpen}
+                theme={theme}
                 goToMenu={`menu${subMenus.length}`}
                 setActiveMenu={setActiveMenu}
               >
@@ -188,6 +193,7 @@ export function DropdownMenu({ menuItems, setOpen, subMenus = [] }) {
                     click={item.handleSelect}
                     textOnly={item.text}
                     setOpen={setOpen}
+                    theme={theme}
                     goToMenu={`menu${menuIndex + 1}`}
                     setActiveMenu={setActiveMenu}
                   >
@@ -216,10 +222,17 @@ export function DropdownItem(props) {
       </div>
     );
   } else if (props.component) {
-    return <div className="dropdown-menu-item">{props.component}</div>;
+    return (
+      <div className={`dropdown-menu-item-${props.theme}`}>
+        {props.component}
+      </div>
+    );
   } else if (props.click) {
     return (
-      <button onClick={props.click} className="dropdown-menu-item">
+      <button
+        onClick={props.click}
+        className={`dropdown-menu-item-${props.theme}`}
+      >
         <span>{props.left}</span>
         <span>{props.children}</span>
       </button>
@@ -228,7 +241,7 @@ export function DropdownItem(props) {
   return (
     <button
       onClick={() => props.setActiveMenu(props.goToMenu)}
-      className="dropdown-menu-item"
+      className={`dropdown-menu-item-${props.theme}`}
     >
       <span>
         <div className="sub-menu-div-upper"></div>

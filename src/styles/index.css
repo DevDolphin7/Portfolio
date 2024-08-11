@@ -1,0 +1,19 @@
+:root {
+  color-scheme: light dark;
+  --light-background: #F7F7F8;
+  --light-font-color: #201D21;
+  --dark-background: #322932;
+  --dark-font-color: #FEFEFF;
+}
+
+body,
+.react-loading-image {
+  height: 100vh;
+  width: 100vw;
+}
+
+.react-loading-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
