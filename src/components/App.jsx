@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Nav from "./Nav/Nav.jsx";
 import Home from "../routes/Home.jsx";
+import Projects from "../routes/Projects.jsx";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Nav />
       <Routes>
         <Route path={"/Home"} element={<Home />} />;
+        <Route path={"/Projects"} element={<Projects />} />
       </Routes>
     </>
   );
