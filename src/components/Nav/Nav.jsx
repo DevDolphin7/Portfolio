@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link, useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom";
 import { Paper } from "@mui/material";
 import { ThemeContext } from "../../contexts/Theme";
 import ToggleTheme from "../ToggleTheme";
@@ -12,6 +12,8 @@ export default function Nav() {
   const { theme } = useContext(ThemeContext);
   const menu = defineMenu();
 
+  console.log(theme === "light" ? "dropdown-menu-light" : "dropdown-menu-dark")
+
   return (
     <Paper elevation={12} className="NavBar">
       <Link to={"/Home"}>
@@ -23,7 +25,10 @@ export default function Nav() {
         }
       </Link>
       <h1>Dan Olver</h1>
-      <Dropdown menu={menu} />
+      <Dropdown
+        menu={menu}
+        theme={theme}
+      />
     </Paper>
   );
 }
