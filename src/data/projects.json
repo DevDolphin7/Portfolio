@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "title": "Dolphin News",
+      "description": "Dolphin News is a full-stack application featuring a RESTful API backend and a React frontend. The backend, built using JavaScript and Axios, offers CRUD functionality and is hosted on Supabase and Render. The frontend is a responsive React application, hosted on Netlify, allowing users to browse and interact with news articles.",
+      "image": "https://images.pexels.com/photos/3837409/pexels-photo-3837409.jpeg?w=700&h=700",
+      "languages": "JavaScript, React, Axios, Supabase, Render, Netlify"
+    },
+    {
+      "title": "Swimming Dolphin Clock",
+      "description": "This is a Python project where I built a digital clock with a swimming dolphin animation. It was a fun way to blend creativity with programming, involving animations and time functions in Python.",
+      "image": "https://images.pexels.com/photos/2922672/pexels-photo-2922672.jpeg?w=700&h=700",
+      "languages": "Python"
+    },
+    {
+      "title": "PDF Comparer with OCR",
+      "description": "The PDF Comparer is a tool that uses Optical Character Recognition (OCR) to compare PDF documents and highlight differences. It’s particularly useful for ensuring document accuracy by detecting even subtle changes.",
+      "image": "https://images.pexels.com/photos/760728/pexels-photo-760728.jpeg?w=700&h=700",
+      "languages": "Python, OCR Libraries"
+    },
+    {
+      "title": "PiTemps",
+      "description": "PiTemps is an ongoing project where I’m using Raspberry Pis to measure temperatures at 16 different points and display the information live over a local wireless network. This project integrates hardware and software to monitor and visualize real-time temperature data.",
+      "image": "https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?w=700&h=700",
+      "languages": "Python, Raspberry Pi"
+    }
+  ]
+}
