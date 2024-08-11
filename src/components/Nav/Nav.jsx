@@ -12,7 +12,7 @@ export default function Nav() {
   const { theme } = useContext(ThemeContext);
   const menu = defineMenu();
 
-  console.log(theme === "light" ? "dropdown-menu-light" : "dropdown-menu-dark")
+  console.log(theme === "light" ? "dropdown-menu-light" : "dropdown-menu-dark");
 
   return (
     <Paper elevation={12} className="NavBar">
@@ -25,10 +25,7 @@ export default function Nav() {
         }
       </Link>
       <h1>Dan Olver</h1>
-      <Dropdown
-        menu={menu}
-        theme={theme}
-      />
+      <Dropdown menu={menu} theme={theme} />
     </Paper>
   );
 }
@@ -40,6 +37,7 @@ export function defineMenu() {
     "Welcome",
     "--divider--",
     { Home: () => navigate("/Home") },
+    { Projects: () => navigate("/Projects") },
     { "--component--": <ToggleTheme /> },
   ];
 }
