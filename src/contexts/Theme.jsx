@@ -45,6 +45,7 @@ export function defineThemes() {
         fontSize: 16,
         h1: { fontSize: 64 },
         h2: { fontSize: 44 },
+        button: { fontWeight: 600 },
       },
     }),
     dark: createTheme({
@@ -68,6 +69,7 @@ export function defineThemes() {
         fontSize: 16,
         h1: { fontSize: 64 },
         h2: { fontSize: 44 },
+        button: { fontWeight: 600 },
       },
     }),
   };
