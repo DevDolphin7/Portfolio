@@ -223,7 +223,10 @@ export function DropdownItem(props) {
     );
   } else if (props.component) {
     return (
-      <div className={`dropdown-menu-item-${props.theme}`}>
+      <div
+        id="responsive-hide-toggle"
+        className={`dropdown-menu-item-${props.theme}`}
+      >
         {props.component}
       </div>
     );
