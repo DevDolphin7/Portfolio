@@ -1,0 +1,46 @@
+{
+  "interests": [
+    {
+      "topic": "Music",
+      "title": "Jojo Mayer Bass Pedal",
+      "description": "I’ve always been fascinated by the precision and control offered by Jojo Mayer’s bass pedal technique. This pedal has become an integral part of my drumming setup, helping me explore new rhythmic possibilities.",
+      "image": "https://images.pexels.com/photos/8882198/pexels-photo-8882198.jpeg?w=700&h=700"
+    },
+    {
+      "topic": "Music",
+      "title": "Guitar Restoration Project",
+      "description": "I restored an old, worn-out guitar to its former glory. This project involved sanding, refinishing, and rewiring, resulting in a fully functional and aesthetically pleasing instrument.",
+      "image": "https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?w=700&h=700"
+    },
+    {
+      "topic": "Music",
+      "title": "Blackwater Ridge - Spotify",
+      "description": "Blackwater Ridge was my old band, where I played drums. Our music is still available on Spotify, showcasing our journey through rock and alternative music.",
+      "image": "https://images.pexels.com/photos/2956143/pexels-photo-2956143.jpeg?w=700&h=700"
+    },
+    {
+      "topic": "Music",
+      "title": "Arctic Monkeys Cover Band",
+      "description": "I'm currently part of an Arctic Monkeys cover band, where we bring their iconic sound to live performances. It’s a fun project that allows me to combine my passion for drumming with my love for the band's music.",
+      "image": "https://images.pexels.com/photos/25946692/pexels-photo-25946692.jpeg?w=700&h=700"
+    },
+    {
+      "topic": "Science and Engineering",
+      "title": "Carputer Project",
+      "description": "I transformed my MK3 Ford Fiesta by installing a 'carputer' system using a Raspberry Pi. The setup includes a touchscreen interface, satellite navigation, music player, and car diagnostics, all integrated seamlessly into the vehicle.",
+      "image": "https://images.pexels.com/photos/5976778/pexels-photo-5976778.jpeg?w=700&h=700"
+    },
+    {
+      "topic": "Science and Engineering",
+      "title": "Campervan Conversion",
+      "description": "I converted a Mercedes Sprinter into a fully equipped campervan, featuring skylights, a sink, double bed, heating, and a bathroom with a shower. This project combined my love for engineering with a passion for adventure.",
+      "image": "https://images.pexels.com/photos/9354590/pexels-photo-9354590.jpeg?w=700&h=700"
+    },
+    {
+      "topic": "Science and Engineering",
+      "title": "Record Player Restoration",
+      "description": "Currently, I'm working on a project to replace the internals of an old record player with a Raspberry Pi and new speakers. This will give the vintage player a modern twist while retaining its classic charm.",
+      "image": "https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?w=700&h=700"
+    }
+  ]
+}
